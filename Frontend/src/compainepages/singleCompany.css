@@ -1,0 +1,94 @@
+.company-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+.company-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.company-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.company-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #444;
+}
+
+.company-form input,
+.company-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.company-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-actions button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.form-actions button:first-child {
+  background: #f44336;
+  color: #fff;
+}
+
+.form-actions button:first-child:hover {
+  background: #d32f2f;
+}
+
+.form-actions button:last-child {
+  background: #4caf50;
+  color: #fff;
+}
+
+.form-actions button:last-child:hover {
+  background: #388e3c;
+}
+
+.message {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.message.success {
+  background: #e6f4ea;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+.message.error {
+  background: #fdecea;
+  color: #c62828;
+  border: 1px solid #f5c6cb;
+}

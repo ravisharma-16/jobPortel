@@ -1,0 +1,89 @@
+.admin-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 16px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.table-header h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-add {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-add a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-add:hover {
+  background: #45a049;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.col-logo {
+  width: 80px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.btn-view {
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-view:hover {
+  background: #0b7dda;
+}
+
+.no-data {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: gray;
+}
+
+.more-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  cursor: pointer;
+  margin: 20px auto;
+  user-select: none;
+}

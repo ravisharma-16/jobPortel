@@ -1,0 +1,83 @@
+.postjob-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 8px 8px 10px 12px rgba(156, 37, 37, 0.6);
+}
+
+.postjob-container:hover
+{
+border: 1px solid rgb(126, 28, 28);
+}
+
+.postjob-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.postjob-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #007bff;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.form-inline {
+  display: flex;
+  gap: 20px;
+}
+
+.form-inline .form-group {
+  flex: 1;
+}
+
+.submit-btn {
+  padding: 12px;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}

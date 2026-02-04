@@ -1,0 +1,51 @@
+.text {
+  background: linear-gradient(to right, #DA22FF, #9733EE, #DA22FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 34px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+h1, h2,h6 {
+  margin: 0;
+  line-height: 1.2;  /* tighter line spacing */
+}
+
+.header
+{
+  font: 1em sans-serif;
+  background: linear-gradient(to right, #0c0b0c, #1e1d1f, #0d0b0e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header3
+{
+  margin-top: 10px;
+   font: 1em sans-serif;
+  background: linear-gradient(to right, #0c0b0c, #1e1d1f, #0d0b0e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 15px;
+}
+.inputbox {
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: none;border-bottom: 2px solid black;
+  width: 40%;
+  font-size: 16px;
+  color: #000;  
+
+}
+
+.search-btn
+{
+  background-color: #000;
+  color: antiquewhite;
+  width: 60px;
+  height: 40px;
+   border: none;
+  cursor: pointer;
+  border-radius: 0px 20px 20px 0px; 
+}

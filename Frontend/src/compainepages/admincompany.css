@@ -1,0 +1,167 @@
+/* Main container */
+.admin-container {
+    margin-top: 20px;
+  padding: 20px;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Table wrapper */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* 👈 ensures alignment */
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header */
+thead {
+  background-color: #2563eb;
+  color: white;
+}
+
+th {
+  text-align: left;
+  padding: 12px 16px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* Table rows */
+td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+  color: #374151;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* 👈 cuts long text with ... */
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.table-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+button
+{
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 2px solid black;
+  box-shadow: 10px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+/* tr:hover {
+  background-color: #f3f4f6;
+} */
+
+/* Specific column widths */
+th:nth-child(1),
+td:nth-child(1) {
+  width: 80px;
+  text-align: center;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 40%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 25%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  width: 15%;
+  text-align: center;
+}
+
+/* Company avatar */
+.avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Buttons */
+.btn-view {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.btn-view:hover {
+  background-color: #1e40af;
+}
+
+/* 📱 Responsive: Convert to card layout */
+@media (max-width: 768px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none; /* hide header */
+  }
+
+  tr {
+    margin-bottom: 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 10px;
+    background: white;
+  }
+
+  td {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+
+  td:before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #374151;
+  }
+}
+
+.col-name
+{
+    text-align: center;
+}
+.col-date
+{
+    text-align: center;
+}

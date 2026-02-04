@@ -1,0 +1,108 @@
+/* Main container */
+.applicant-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Title */
+.title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+  text-align: center;
+}
+
+/* Table wrapper for responsiveness */
+.table-wrapper {
+  width: 100%;
+  max-width: 100%;   /* ✅ take full width of screen */
+  overflow-x: auto;  /* ✅ allow scrolling if content too wide */
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+/* Table styling */
+.applicant-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  table-layout: auto; /* ✅ makes table shrink nicely */
+}
+
+.applicant-table caption {
+  caption-side: top;
+  margin-bottom: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+.applicant-table th,
+.applicant-table td {
+  padding: 10px;
+  border: 1px solid #979191;
+  word-wrap: break-word; /* ✅ prevents text overflow */
+}
+
+.applicant-table th {
+  background-color: blueviolet;
+  font-weight: bold;
+  color: #fff;
+}
+
+.applicant-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Action column */
+.action-cell {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap; /* ✅ makes buttons wrap on small screens */
+}
+
+/* Buttons */
+.btn {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.accept-btn {
+  border-color: green;
+  color: green;
+}
+
+.reject-btn {
+  border-color: red;
+  color: red;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .applicant-table th,
+  .applicant-table td {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  .btn {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+}
