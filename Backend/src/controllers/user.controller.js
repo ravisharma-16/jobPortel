@@ -172,9 +172,9 @@ export const loginUser = async (req, res) => {
 export const updateprofile = async (req, res) => {
   try {
     // 🔍 Debug 
-    console.log("BODY:", req.body);
-    console.log("FILE:", req.file);
-    console.log("USER:", req.user);
+    // console.log("BODY:", req.body);
+    // console.log("FILE:", req.file);
+    // console.log("USER:", req.user);
 
     const userId = req.user._id; 
     const { fullname, email, phoneNumber, bio, skill } = req.body;
